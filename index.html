@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="slides.css">
+    
+    <title>TravelBag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Kdam+Thmor+Pro&family=PT+Serif&family=Quicksand:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div class="navbar-links">
+        <ul>
+            <li><a class="Menu1" href="index.html">Početna</a></li>
+            <li><a class="Menu1" href="#news">Vesti</a></li>
+            <li><a class="Menu1" href="Kontakt.html">Kontakt</a></li>
+            <li><a class="Menu1" href="#about">O Nama</a></li>
+        </ul>
+  </div>
+
+<!--
+    <a href="stranica2.html"> <img  class="FontanaDiTreviSlika" src="img/fontana.jpg" > 
+    <p class="NaslovRim"> 10 stvari koje ne smes propustiti u vecnom gradu</p>
+
+    <a href="stranica2.html"> <img  class="ForumRomanum" src="img/Forodiroma2.jpg" > 
+    <p class="NaslovForumRomanum"> Forum Romanum</p>
+
+-->
+  <br> <br> <br> <br>
+
+        <div class="mySlidesfade">
+          <div class="numbertext"></div>
+          <a class="slideSlike" href="stranica2.html"><img class="slika3" src="img/1.jpg" style="height: 800px;"></a>
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlidesfade">
+          <div class="numbertext"></div>
+          <a class="slideSlike" href="stranica2.html"><img class="slika3" src="img/2.jpg" style=" height: 800px;"></a>
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlidesfade">
+          <div class="numbertext"></div>
+          <a class="slideSlike" href="stranica2.html"><img  class="slika3" src="img/3.webp" style="height: 800px;"></a>
+          <div class="text"></div>
+        </div>
+        
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlidesfade");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 7000); // Change image every 2 seconds
+        }
+        </script>
+
+
+<div class="footer">
+  <p class="footerParagraf">Autor: Vujadin</p>
+  <a class="mail" href="putpodnoge@example.com">putpodnoge@example.com</a></p>
+</div>
+    </body>
+    
+</html> 
